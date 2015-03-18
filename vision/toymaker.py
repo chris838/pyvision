@@ -1,4 +1,4 @@
-import Image
+from PIL import Image
 from ImageDraw import Draw
 import random
 from vision.annotations import *

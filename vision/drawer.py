@@ -5,7 +5,7 @@ the box, it returns with the coordinates.
 
 Usage is simple:
 
->> import Image, vision.drawer
+>> from PIL import Image, vision.drawer
 >> image = Image.open("/path/to/image.jpg")
 >> xmin, ymin, xmax, ymax = getcoords(image)
 
@@ -13,8 +13,8 @@ The only dependencies are Tkinter and PIL (it does not depend on pyvision).
 """
 
 from Tkinter import *
-import Image
-import ImageTk
+from PIL import Image
+from PIL import ImageTk
 
 try:
     import vision
